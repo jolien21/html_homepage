@@ -1,0 +1,143 @@
+#photo {
+  float: right;
+  margin-left:30px;
+  margin-right: 150px;
+  margin-top:100px;
+  width:300px;
+  height:auto;
+  border-radius:50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+
+
+#chart_div {
+  margin-left: 100px;
+  margin-right:100px;
+  margin-bottom:50px;
+  margin-top: 50px;
+}
+
+.list img {
+  max-width: 10%;
+  height: auto; /* Laat de hoogte automatisch schalen */
+  display:block;
+  margin:auto;
+  margin-top:100px;
+  margin-bottom: 50px
+}
+
+.list a{
+  display:flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+body{
+  background-image: url('images/background.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Lexend Exa, Arial;
+  color:white;
+  font-optical-sizing: auto;
+}
+
+p, .list a {
+  font-family: Lexend Exa, Arial;
+  color:white;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 20px;
+  text-decoration:none;
+}
+
+p {
+  text-align:justify;
+}
+
+.header h1, .body h2 {
+  font-weight: bold;
+  font-family: Lexend Exa, Arial;
+  display:flex;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.header h1 {
+  color: #dc741a;
+}
+
+.body h2 {
+  color:white;
+}
+
+.home {
+  height:90vh;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  font-family: Lexend Exa, Arial;
+  font-weight: bold;
+
+}
+.home h1 {
+  color: white;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.home h1.visible, .home h2.visible {
+  opacity: 1;
+}
+
+.home h2 {
+  color: #dc741a;
+  font-family: "Qwigley", cursive;
+  font-weight:400;
+  opacity: 0;
+  transition: opacity 4s ease-in-out;
+
+}
+
+nav {
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  width:100%;
+  align-items: center;
+  margin-top:80px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: Lexend Exa, Arial;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+}
+
+nav li{
+  margin: 0 50px; /* Add spacing between items */
+  padding:9px;
+}
+
+nav li:hover, .list a:hover{
+  background: rgba(0, 0, 0, 0.6);
+  transition: color 2s ease-in-out, background-coror 0.15s ease-in-out;
+
+}
+
+nav a{
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+}
+
